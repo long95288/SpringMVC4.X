@@ -1,4 +1,4 @@
-package com.Ioc;
+package com.ioc;
 
 public class UserDaoImpl implements UserDao {
     @Override

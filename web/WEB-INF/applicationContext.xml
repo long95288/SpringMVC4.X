@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--让spring 帮忙创建userDao 对象的实例-->
-    <bean id="userDao" class="com.Ioc.UserDaoImpl"/>
+    <bean id="userDao" class="com.ioc.UserDaoImpl"/>
     <!--创建UserDao2实例-->
-    <bean id="userDao2" class="com.Ioc.UserDao2Impl"/>
+    <bean id="userDao2" class="com.ioc.UserDao2Impl"/>
     <!--userService实例-->
-    <bean id="userService" class="com.Ioc.UserServiceImpl">
+    <bean id="userService" class="com.ioc.UserServiceImpl">
         <!--将userDao实例注入到userService userDao的属性中-->
         <property name="userDao" ref="userDao"/>
         <!--ref="" 里面的值是bean id=""相对应-->

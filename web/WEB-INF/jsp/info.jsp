@@ -14,5 +14,13 @@
 <h4>这是路径为rootURL/login/info的处理</h4>
 <br>
 Model传过来的数据${info}
+<table>
+    <tr>
+        <td>账号:</td><td>${account}</td>
+    </tr>
+    <tr>
+        <td>密码:</td><td>${password}</td>
+    </tr>
+</table>
 </body>
 </html>

@@ -1,6 +1,6 @@
 package Test;
 
-import com.Ioc.UserService;
+import com.ioc.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 

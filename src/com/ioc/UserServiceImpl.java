@@ -1,4 +1,4 @@
-package com.Ioc;
+package com.ioc;
 
 public class UserServiceImpl implements UserService{
     // 声明了一个userDao的属性

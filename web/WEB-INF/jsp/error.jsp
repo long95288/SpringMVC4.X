@@ -12,5 +12,6 @@
 </head>
 <body>
 这是错误界面
+error:${errorMsg}
 </body>
 </html>

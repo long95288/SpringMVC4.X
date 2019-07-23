@@ -1,9 +1,8 @@
 package Test;
 
-import com.Ioc.UserDao;
-import com.Ioc.UserDao2;
+import com.ioc.UserDao;
+import com.ioc.UserDao2;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 // 测试userDao的实现类

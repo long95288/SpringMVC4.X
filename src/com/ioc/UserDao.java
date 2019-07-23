@@ -1,4 +1,4 @@
-package com.Ioc;
+package com.ioc;
 
 // 接口类
 public interface UserDao {
