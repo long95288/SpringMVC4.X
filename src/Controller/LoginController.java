@@ -39,10 +39,12 @@ public class LoginController {
      * @param model 未登录返回的模型
      * @return info
      */
-    @GetMapping(path = "/login")
+    // @GetMapping(path = "/login")
+    @RequestMapping(path = "/login", method = RequestMethod.GET)
     public String login2(Model model) {
         model.addAttribute("info","未登陆");
-        return "info";
+        // 转到首页
+        return "index";
     }
 
     /**
@@ -55,6 +57,7 @@ public class LoginController {
         model.addAttribute("password",password);
         return "info";
     }
+
 
     /**
      *
