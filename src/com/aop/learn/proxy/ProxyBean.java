@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ * 动态代理
  * @author longquanxiao
  * @date 2019/8/1
  */
@@ -44,12 +45,14 @@ public class ProxyBean implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         boolean exceptionFlag = false;
+        // 调用的对象
         Invocation invocation = new Invocation(target,method,args);
         Object retObj = null;
         try {
             if(this.interceptor.before()){
                 retObj = this.interceptor.around(invocation);
             }else{
+                // 调用被代理的对象的方法
                 retObj = method.invoke(target,args);
             }
         }catch (Exception e){

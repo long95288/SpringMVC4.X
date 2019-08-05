@@ -39,6 +39,7 @@ public class MyInterceptor implements Interceptor{
     @Override
     public Object around(Invocation invocation) throws InvocationTargetException,IllegalAccessException {
         System.out.println("around before ....");
+        // 执行代理方法
         Object obj = invocation.proceed();
         System.out.println("around after ...");
         return obj;

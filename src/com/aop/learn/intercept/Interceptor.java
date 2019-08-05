@@ -26,7 +26,7 @@ public interface Interceptor {
      * 取代原有的事件方法
      * @param invocation 回调参数，通过proceed方法回调原有事件
      * @return 原有事件返回对象
-     * @throws InvocationTargetException
+     * @throws InvocationTargetException,IllegalAccessException 可能会抛出的异常
      */
     Object around(Invocation invocation) throws
             IllegalAccessException,InvocationTargetException;

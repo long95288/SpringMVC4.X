@@ -8,8 +8,17 @@ import java.lang.reflect.Method;
  * @date 2019/8/1
  */
 public class Invocation {
+    /**
+     * 反射调用的参数
+     */
     private Object[] params;
+    /**
+     * 被调用的方法对象
+     */
     private Method method;
+    /**
+     * 维护的对象
+     */
     private Object target;
 
     public Invocation(Object target,Method method,Object[] params) {
@@ -26,6 +35,7 @@ public class Invocation {
      */
     public Object proceed() throws
             InvocationTargetException,IllegalAccessException {
+        // 返回调用的结果
         return method.invoke(target,params);
     }
 
